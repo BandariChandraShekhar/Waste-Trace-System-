@@ -1,7 +1,7 @@
 # Project Overview
 The Smart E-Waste & Hazardous Waste Traceability System is a digital platform designed to ensure complete traceability of e-waste and hazardous waste from its point of generation to certified recycling or safe disposal.
 The system addresses the issue of illegal dumping and improper waste handling by introducing QR-code based tracking, real-time status updates, and a transparent monitoring dashboard for regulatory authorities.
-This solution aligns.
+
 # 🎯 Problem Statement
 E-waste and hazardous waste are often mixed with general waste and disposed of in landfills due to the absence of a transparent tracking mechanism. Although certified recyclers exist, there is no end-to-end visibility to ensure compliance, leading to environmental pollution and loss of valuable recyclable materials.
 # 💡 Solution
