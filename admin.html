@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="style.css">
+<div class="container">
+  <h2>Admin Dashboard</h2>
+  <ul id="list"></ul>
+</div>
+
+<script>
+fetch("/api/waste")
+.then(res => res.json())
+.then(data => {
+  data.forEach(w => {
+    document.getElementById("list").innerHTML += `
+      <li>
+        ${w.wasteType} - <b>${w.status}</b><br>
+        ID: ${w._id}<br>
+        <button onclick="complete('${w._id}')">Completed</button>
+        <button onclick="resetWaste('${w._id}')">Reset</button>
+        <hr>
+      </li>
+    `;
+  });
+});
+
+function complete(id) {
+  fetch(`/api/waste/complete/${id}`, {
+    method: "PUT"
+  })
+  .then(() => {
+    alert("Marked as Completed");
+    location.reload();
+  });
+}
+
+function resetWaste(id) {
+  fetch(`/api/waste/reset/${id}`, {
+    method: "PUT"
+  })
+  .then(() => {
+    alert("Reset Successful");
+    location.reload();
+  });
+}
+</script>

@@ -1,0 +1,7 @@
+
+> waste-trace-backend@1.0.0 start
+> node server.js
+
+Backend server running on port 5000
+MongoDB Connected
+^C
